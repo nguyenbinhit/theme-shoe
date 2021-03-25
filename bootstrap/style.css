@@ -124,29 +124,90 @@ nav>.container>#navbarNav>ul>li>a {
     border-radius: 10px;
 } */
 
+.shoe-product-detial {
+    padding: 80px 80px;
+}
+
+.shoe-star .shoe-title {
+    font-size: 24pt;
+    font-weight: bold;
+    position: relative;
+}
+
+.price {
+    font-size: 2rem;
+}
+
+.price-sale {
+    font-size: 1rem;
+    text-decoration: line-through rgb(228, 9, 9);
+    position: absolute;
+    top: 27%;
+    left: 0;
+}
+
+.prduct-img {
+    background-color: #fff;
+    border: 1px solid black;
+    width: 100%;
+    height: 80%;
+}
+
+.shoe-star .title-box {
+    content: "";
+    height: 4px;
+    width: 410px;
+    background-color: rgb(228, 9, 9);
+    margin-top: 2rem;
+}
+
+.shoe-star p span {
+    color: rgb(243, 236, 25);
+    font-size: 1.45rem;
+}
+
+.pr-bold {
+    font-size: 1.25rem !important;
+    font-weight: bold;
+    color: black !important;
+}
+
+.pr-intro {
+    font-size: 13pt;
+    color: black;
+}
+
 footer {
     clear: none;
     background-color: rgb(34, 34, 34);
     color: white;
 }
 
-footer .container .row .col-md-3 h4 {
+footer .container .row .col-lg-8 .col-md-4 h4 {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
-footer .container .row .col-md-3 p a {
+footer .container .row .col-lg-8 .col-md-4 p a {
     color: white;
 }
 
-footer .container .row .col-md-3 p a:hover {
+footer .container .row .col-lg-8 .col-md-4 p a:hover {
     text-decoration: underline;
 }
 
-.footer-icons a {
+.footer-icons {
+    padding: 1rem 0 1rem 4rem;
+}
+
+.footer-icons .col-sm-3 {
+    width: 22%;
+}
+
+.footer-icons .col-sm-3 a {
     color: white;
-    font-size: 1.75rem;
+    font-size: 2rem;
 }
 
 .footer-text {
