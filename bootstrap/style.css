@@ -30,6 +30,18 @@ nav>.container>#navbarNav>ul>li>a {
     background: none;
 }
 
+@media screen and (max-width: 576px) {
+    .search_input {
+        color: white;
+        padding: 2px 5px;
+        min-width: calc(450px - 250px);
+        caret-color: red;
+        border: 0;
+        outline: 0;
+        background: none;
+    }
+}
+
 .search_icon {
     min-height: 32px;
     min-width: 32px;
@@ -159,6 +171,16 @@ nav>.container>#navbarNav>ul>li>a {
     width: 410px;
     background-color: rgb(228, 9, 9);
     margin-top: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+    .shoe-star .title-box {
+        content: "";
+        height: 4px;
+        width: 200px;
+        background-color: rgb(228, 9, 9);
+        margin-top: 2rem;
+    }
 }
 
 .shoe-star p span {
