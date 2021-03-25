@@ -177,6 +177,20 @@ nav>.container>#navbarNav>ul>li>a {
     color: black;
 }
 
+.pr-mau {
+    content: "";
+    height: 25px;
+    width: 25px;
+    margin-left: 1rem;
+}
+
+#shoe-pr-info {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
 footer {
     clear: none;
     background-color: rgb(34, 34, 34);
