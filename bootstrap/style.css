@@ -1,0 +1,51 @@
+body {
+    background-image: url("img/nen.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: UTM Avo;
+}
+
+nav>.container>#navbarNav>ul>li>a {
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.searchbar {
+    margin-bottom: auto;
+    margin-top: auto;
+    /* min-height: 40px; */
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 5px 5px 5px 5px;
+}
+
+.search_input {
+    color: white;
+    padding: 2px 5px;
+    min-width: calc(450px - 50px);
+    caret-color: red;
+    border: 0;
+    outline: 0;
+    background: none;
+}
+
+.search_icon {
+    min-height: 32px;
+    min-width: 32px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: white;
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+.shoe-img {
+    max-width: 80%;
+    height: auto;
+}
+
+.shoe-img:hover {}
