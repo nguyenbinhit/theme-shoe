@@ -136,6 +136,116 @@ nav>.container>#navbarNav>ul>li>a {
     border-radius: 10px;
 } */
 
+.shoe-deatil-box {
+    border: 1px solid black;
+    width: 65%;
+    height: 65px;
+    position: relative;
+}
+
+.shoe-deatil {
+    background-color: black;
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 100%;
+    height: 62px;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1210px) {
+    .shoe-deatil-box {
+        border: 1px solid black;
+        width: 65%;
+        height: 8rem;
+        position: relative;
+    }
+    .shoe-deatil {
+        background-color: black;
+        color: white;
+        font-size: 2.5rem;
+        text-align: center;
+        width: 100%;
+        height: 8rem;
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .shoe-deatil-box {
+        border: 1px solid black;
+        width: 65%;
+        height: 12rem;
+        position: relative;
+    }
+    .shoe-deatil {
+        background-color: black;
+        color: white;
+        font-size: 2.5rem;
+        text-align: center;
+        width: 100%;
+        height: 12rem;
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 523px) {
+    .shoe-deatil-box {
+        border: 1px solid black;
+        width: 65%;
+        height: 15rem;
+        position: relative;
+    }
+    .shoe-deatil {
+        background-color: black;
+        color: white;
+        font-size: 2.5rem;
+        text-align: center;
+        width: 100%;
+        height: 15rem;
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .shoe-deatil-box {
+        border: 1px solid black;
+        width: 65%;
+        height: 16rem;
+        position: relative;
+    }
+    .shoe-deatil {
+        background-color: black;
+        color: white;
+        font-size: 1.72rem;
+        text-align: center;
+        width: 100%;
+        height: 16rem;
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        z-index: 1;
+    }
+}
+
+.custom-img {
+    border-radius: 10%;
+    width: 90%;
+    height: 80%;
+}
+
 .title-h2 {
     font-size: 2.5rem;
     font-weight: bold;
