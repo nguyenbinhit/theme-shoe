@@ -136,6 +136,19 @@ nav>.container>#navbarNav>ul>li>a {
     border-radius: 10px;
 } */
 
+.title-h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    text-transform: uppercase;
+    margin-bottom: 3.5rem;
+}
+
+.title-p {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
 .shoe-product-detial {
     padding: 80px 80px;
 }
