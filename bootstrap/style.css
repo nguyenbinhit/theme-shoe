@@ -11,6 +11,10 @@ nav>.container>#navbarNav>ul>li>a {
     font-weight: bold;
 }
 
+.ms-6 {
+    margin-left: 4.8rem !important;
+}
+
 .searchbar {
     margin-bottom: auto;
     margin-top: auto;
