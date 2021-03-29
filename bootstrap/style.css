@@ -18,6 +18,10 @@ nav>.container>#navbarNav>ul>li>a {
     margin-left: 4rem !important;
 }
 
+.mb-6 {
+    margin-bottom: 4rem !important;
+}
+
 
 /* search */
 
@@ -282,7 +286,6 @@ nav>.container>#navbarNav>ul>li>a {
     width: 80%;
     height: 20rem;
     position: relative;
-    /* margin-bottom: 20px; */
 }
 
 .home-product-absolute {
@@ -308,6 +311,131 @@ nav>.container>#navbarNav>ul>li>a {
     top: -20px;
     left: 25px;
     z-index: 1;
+}
+
+.home-pro-p {
+    font-size: 14pt;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 1401px) {
+    .home-product-relative {
+        width: 80%;
+        height: 17.5rem;
+        position: relative;
+    }
+    .home-product-absolute {
+        width: 30%;
+        height: 20rem;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@media screen and (max-width: 1144px) {
+    .home-product-relative {
+        width: 80%;
+        height: 18rem;
+        position: relative;
+    }
+    .home-product-absolute {
+        width: 40%;
+        height: 20rem;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .product-1 {
+        top: 0;
+        left: 0 !important;
+    }
+    .product-2 {
+        top: 0;
+        left: 43.5% !important;
+    }
+    .product-3 {
+        top: 0;
+        left: 87% !important;
+    }
+    .product-4 {
+        top: 0;
+        left: 21.5% !important;
+    }
+    .product-5 {
+        top: 0;
+        left: 65.2% !important;
+    }
+}
+
+@media screen and (max-width: 849px) {
+    .home-product-relative {
+        width: 80%;
+        height: 11rem;
+        position: relative;
+    }
+    .home-product-absolute {
+        width: 40%;
+        height: 15rem;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .product-1 {
+        top: 0;
+        left: 0 !important;
+    }
+    .product-2 {
+        top: 0;
+        left: 43.5% !important;
+    }
+    .product-3 {
+        top: 0;
+        left: 87% !important;
+    }
+    .product-4 {
+        top: 10% !important;
+        left: 21.5% !important;
+    }
+    .product-5 {
+        top: 10% !important;
+        left: 65.2% !important;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .home-product-relative {
+        width: 100%;
+        height: 7.5rem;
+        position: relative;
+    }
+    .home-product-absolute {
+        width: 30%;
+        height: 10rem;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .product-1 {
+        top: 0;
+        left: 0 !important;
+    }
+    .product-2 {
+        top: 0;
+        left: 35% !important;
+    }
+    .product-3 {
+        top: 0;
+        left: 70.5% !important;
+    }
+    .product-4 {
+        top: 10% !important;
+        left: 17.5% !important;
+    }
+    .product-5 {
+        top: 10% !important;
+        left: 53% !important;
+    }
 }
 
 
