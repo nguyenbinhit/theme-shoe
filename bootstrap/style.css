@@ -806,6 +806,51 @@ nav>.container>#navbarNav>ul>li>a {
     left: 69%;
 }
 
+@media screen and (max-width: 1267px) {
+    .order-box {
+        width: 12.2rem;
+        height: 0.25rem;
+        padding: 0;
+        margin: 0;
+        top: 18px;
+        position: absolute;
+        background: black;
+    }
+}
+
+@media screen and (max-width: 1019px) {
+    .order-box {
+        width: 20rem;
+        height: 0.25rem;
+        padding: 0;
+        margin: 0;
+        top: 18px;
+        position: absolute;
+        background: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .num-1 {
+        left: 5%;
+    }
+    .num-2 {
+        left: 50%;
+    }
+    .num-3 {
+        left: 89%;
+    }
+    .title-1 {
+        left: 3%;
+    }
+    .title-2 {
+        left: 38%;
+    }
+    .title-3 {
+        left: 86%;
+    }
+}
+
 
 /* footer */
 
