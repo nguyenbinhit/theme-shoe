@@ -700,6 +700,36 @@ nav>.container>#navbarNav>ul>li>a {
 }
 
 
+/* product protfolio */
+
+.protfolio-box {
+    background-color: white;
+    width: 65%;
+    border: 1px solid black;
+    padding: 15px 20px 15px 20px;
+    color: rgb(34, 34, 34);
+}
+
+.protfolio-title {
+    font-size: 15pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.protfolio-a {
+    display: block;
+    padding: .25rem;
+    text-decoration: none;
+    transition: color .15s;
+    color: rgb(34, 34, 34);
+}
+
+.protfolio-a:hover {
+    color: black;
+    background-color: rgb(240, 240, 240);
+}
+
+
 /* footer */
 
 footer {
