@@ -359,7 +359,6 @@
     <script>
         // kiểm  tra người dùng nhập dữ liệu vào form
         document.getElementById("form-user").onsubmit = function() {
-
             //check họ tên != null
             var name = document.getElementById("hoten").value;
             if (name == "") {
@@ -392,7 +391,7 @@
             }
 
             // check address != null
-            var addresss = document.getElementById("addresss").value;
+            var addresss = document.getElementById("address").value;
             if (addresss == "") {
                 alert('Bạn chưa nhập địa chỉ của mình!');
                 document.forms['form-user'].addresss.focus();
@@ -401,7 +400,7 @@
 
             // đúng điều kiện chuyển trang
             else {
-                window.location.assign("completed.html")
+                location.assign("completed.html");
             }
         }
     </script>
