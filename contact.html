@@ -175,7 +175,7 @@
                 </div>
                 <div class="row mt-5">
                     <div class="d-flex align-items-center justify-content-center">
-                        <form class="text-center" action="" method="POST">
+                        <form name="contact" id="contact" class="text-center" action="" method="POST">
                             <input type="text" class="form-control mb-4" name="txtname" id="txtname" placeholder="Họ tên" style="width: 45rem;">
                             <input type="email" class="form-control mb-4" name="txtemail" id="txtemail" placeholder="Email" style="width: 45rem;">
                             <input type="text" class="form-control mb-4" name="txtphone" id="txtphone" placeholder="Số điện thoại" style="width: 45rem;">
@@ -318,6 +318,57 @@
     <script src="bootstrap/fontawesome-free-5.15.3-web/js/brands.js"></script>
     <script src="bootstrap/fontawesome-free-5.15.3-web/js/solid.js"></script>
     <script src="bootstrap/fontawesome-free-5.15.3-web/js/fontawesome.js"></script>
+
+    <script>
+        // kiểm  tra người dùng nhập dữ liệu vào form
+        document.getElementById("contact").onsubmit = function() {
+
+            //check họ tên != null
+            var name = document.getElementById("txtname").value;
+            if (name == "") {
+                alert('Bạn chưa nhập họ tên của mình!');
+                document.forms['contact'].name.focus();
+                reset;
+            }
+
+            // check email != null
+            var email = document.getElementById("txtemail").value;
+            if (email == "") {
+                alert('Bạn chưa nhập email của mình!');
+                document.forms['contact'].email.focus();
+                reset;
+            }
+
+            //check phone != null
+            var phone = document.getElementById("txtphone").value;
+            if (phone == "") {
+                alert('Bạn cần nhập số điện thoại của mình!');
+                document.forms['contact'].phone.focus();
+                reset;
+            }
+
+            //kiem tra phone phai la so
+            if (isNaN(phone) == true) {
+                alert("Số điện thoại phải là số có độ dài 10 đến 11 số !");
+                document.forms['contact'].phone.focus();
+                return;
+            }
+
+            // check address != null
+            var comment = document.getElementById("txtcomment").value;
+            if (comment == "") {
+                alert('Bạn chưa nhập nội dung!');
+                document.forms['contact'].comment.focus();
+                reset;
+            }
+
+            // đúng điều kiện chuyển trang
+            else {
+                alert('Cảm ơn quý khách đã đến với Morino!');
+                return;
+            }
+        }
+    </script>
 </body>
 
 </html>
