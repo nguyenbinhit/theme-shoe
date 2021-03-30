@@ -194,30 +194,30 @@
                             width: 280%;
                         }
                     </style>
-                    <form action="" method="POST">
+                    <form name="form-user" id="form-user" action="" method="POST">
                         <table border="0">
                             <tr>
                                 <th>Họ tên (<span style="color: red;">*</span>)</th>
                                 <td style="width: 40px;"></td>
-                                <td><input type="text" class="form-control-sm" name="" id=""></td>
+                                <td><input type="text" class="form-control-sm" name="hoten" id="hoten"></td>
                             </tr>
                             <tr style="height: 30px;"></tr>
                             <tr>
                                 <th>Email (<span style="color: red;">*</span>)</th>
                                 <td style="width: 40px;"></td>
-                                <td><input type="text" class="form-control-sm" name="" id=""></td>
+                                <td><input type="text" class="form-control-sm" name="email" id="email"></td>
                             </tr>
                             <tr style="height: 30px;"></tr>
                             <tr>
                                 <th>Điện thoại (<span style="color: red;">*</span>)</th>
                                 <td style="width: 40px;"></td>
-                                <td><input type="text" class="form-control-sm" name="" id=""></td>
+                                <td><input type="text" class="form-control-sm" name="phone" id="phone"></td>
                             </tr>
                             <tr style="height: 30px;"></tr>
                             <tr>
                                 <th>Địa chỉ (<span style="color: red;">*</span>)</th>
                                 <td style="width: 40px;"></td>
-                                <td><input type="text" class="form-control-sm" name="" id=""></td>
+                                <td><input type="text" class="form-control-sm" name="address" id="address"></td>
                             </tr>
                             <tr style="height: 30px;"></tr>
                             <tr>
@@ -225,10 +225,10 @@
                                 <td style="width: 40px;"></td>
                                 <td>
                                     <select name="thanhtoan" id="thanhtoan" class="form-control-sm" style="width: 280%;">
-                                        <option selected>Thanh toán khi nhận hàng</option>
-                                        <option value="">Thanh toán bằng online</option>
-                                        <option value="">Thanh toán qua Momo</option>
-                                        <option value="">Thanh toán qua Airpay</option>
+                                        <option value="1">Thanh toán khi nhận hàng</option>
+                                        <option value="2">Thanh toán bằng online</option>
+                                        <option value="3">Thanh toán qua Momo</option>
+                                        <option value="4">Thanh toán qua Airpay</option>
                                     </select>
                                 </td>
                             </tr>
@@ -356,6 +356,55 @@
     <script src="bootstrap/fontawesome-free-5.15.3-web/js/solid.js"></script>
     <script src="bootstrap/fontawesome-free-5.15.3-web/js/fontawesome.js"></script>
 
+    <script>
+        // kiểm  tra người dùng nhập dữ liệu vào form
+        document.getElementById("form-user").onsubmit = function() {
+
+            //check họ tên != null
+            var name = document.getElementById("hoten").value;
+            if (name == "") {
+                alert('Bạn chưa nhập họ tên của mình!');
+                document.forms['form-user'].name.focus();
+                reset;
+            }
+
+            // check email != null
+            var email = document.getElementById("email").value;
+            if (email == "") {
+                alert('Bạn chưa nhập email của mình!');
+                document.forms['form-user'].email.focus();
+                reset;
+            }
+
+            //check phone != null
+            var phone = document.getElementById("phone").value;
+            if (phone == "") {
+                alert('Bạn cần nhập số điện thoại của mình!');
+                document.forms['0'].phone.focus();
+                reset;
+            }
+
+            //kiem tra phone phai la so
+            if (isNaN(phone) == true) {
+                alert("Số điện thoại phải là số có độ dài 10 đến 11 số !");
+                document.forms['form-user'].phone.focus();
+                return;
+            }
+
+            // check address != null
+            var addresss = document.getElementById("addresss").value;
+            if (addresss == "") {
+                alert('Bạn chưa nhập địa chỉ của mình!');
+                document.forms['form-user'].addresss.focus();
+                reset;
+            }
+
+            // đúng điều kiện chuyển trang
+            else {
+                window.location.assign("completed.html")
+            }
+        }
+    </script>
 </body>
 
 </html>
