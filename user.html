@@ -194,12 +194,12 @@
                             width: 280%;
                         }
                     </style>
-                    <form name="form-user" id="form-user" action="" method="POST">
+                    <form name="form1" id="form1" action="completed.html" method="POST">
                         <table border="0">
                             <tr>
                                 <th>Họ tên (<span style="color: red;">*</span>)</th>
                                 <td style="width: 40px;"></td>
-                                <td><input type="text" class="form-control-sm" name="hoten" id="hoten"></td>
+                                <td><input type="text" class="form-control-sm" name="name" id="name"></td>
                             </tr>
                             <tr style="height: 30px;"></tr>
                             <tr>
@@ -358,49 +358,55 @@
 
     <script>
         // kiểm  tra người dùng nhập dữ liệu vào form
-        document.getElementById("form-user").onsubmit = function() {
+        document.getElementById("form1").onsubmit = function() {
+
+
             //check họ tên != null
-            var name = document.getElementById("hoten").value;
+            var name = document.getElementById("name").value;
             if (name == "") {
                 alert('Bạn chưa nhập họ tên của mình!');
-                document.forms['form-user'].name.focus();
-                reset;
+                document.forms['form1'].name.focus();
+                return false;
             }
 
             // check email != null
             var email = document.getElementById("email").value;
             if (email == "") {
                 alert('Bạn chưa nhập email của mình!');
-                document.forms['form-user'].email.focus();
-                reset;
+                document.forms['form1'].email.focus();
+                return false;
             }
+
+
 
             //check phone != null
             var phone = document.getElementById("phone").value;
             if (phone == "") {
                 alert('Bạn cần nhập số điện thoại của mình!');
-                document.forms['form-user'].phone.focus();
-                reset;
+                document.forms['form1'].phone.focus();
+                return false;
             }
 
             //kiem tra phone phai la so
             if (isNaN(phone) == true) {
                 alert("Số điện thoại phải là số có độ dài 10 đến 11 số !");
-                document.forms['form-user'].phone.focus();
-                return;
+                document.forms['form1'].phone.focus();
+                return false;
             }
 
+
             // check address != null
-            var addresss = document.getElementById("address").value;
-            if (addresss == "") {
+            var address = document.getElementById("address").value;
+            if (address == "") {
                 alert('Bạn chưa nhập địa chỉ của mình!');
-                document.forms['form-user'].addresss.focus();
-                reset;
+                document.forms['form1'].address.focus();
+                return false;
             }
 
             // đúng điều kiện chuyển trang
             else {
-                location.assign("completed.html");
+                alert('Vui lòng chờ 1 phút chúng tôi đang tải dữ liệu của bạn !!!');
+                return true;
             }
         }
     </script>
