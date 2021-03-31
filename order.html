@@ -246,8 +246,8 @@
                 </table>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn btn-danger me-md-2" type="submit" style="font-weight: bold;">Thêm sản phẩm</button>
-                <button class="btn btn-danger" type="submit" style="background-color: rgb(222, 76, 74);font-weight: bold;">Thanh toán</button>
+                <button class="btn btn-danger me-md-2" type="submit" onclick="add()" style="font-weight: bold;">Thêm sản phẩm</button>
+                <button class="btn btn-danger" type="submit" onclick="pay()" style="background-color: rgb(222, 76, 74);font-weight: bold;">Thanh toán</button>
             </div>
         </div>
     </main>
@@ -352,7 +352,15 @@
     <script src="bootstrap/fontawesome-free-5.15.3-web/js/brands.js"></script>
     <script src="bootstrap/fontawesome-free-5.15.3-web/js/solid.js"></script>
     <script src="bootstrap/fontawesome-free-5.15.3-web/js/fontawesome.js"></script>
+    <script>
+        function pay() {
+            location.assign("user.html");
+        }
 
+        function add() {
+            location.assign("home.html");
+        }
+    </script>
 </body>
 
 </html>
